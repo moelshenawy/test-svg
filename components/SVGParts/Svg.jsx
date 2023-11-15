@@ -18,9 +18,9 @@ const Svg = () => {
       }
 
       if (viewportWidth <= 600) {
-        setViewBox("50 50 700 882");
+        setViewBox("0 50 700 882");
       } else if (viewportWidth <= 1200) {
-        setViewBox("50 50 700 882");
+        setViewBox("0 50 700 882");
       } else {
         setViewBox("0 0 858 724");
       }
