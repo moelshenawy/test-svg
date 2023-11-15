@@ -18,9 +18,7 @@ const SaudiMap = ({ }) => {
 
   return (
     <>
-
       <Container>
-
         <TransformWrapper
           ref={transformComponentRef}
           wheel={{ wheelDisabled: true }}
@@ -65,12 +63,12 @@ const SaudiMap = ({ }) => {
               </div>
 
               <TransformComponent>
-                <Svg />
               </TransformComponent>
             </>
           )
           }
         </TransformWrapper >
+        <Svg />
       </Container>
     </>
 
