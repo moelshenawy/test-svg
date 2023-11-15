@@ -23,8 +23,6 @@ const SaudiMap = ({ }) => {
     <>
 
       <Container>
-
-
         <div className={styles.map_boxes} id='map-boxes'>
           <TransformWrapper
             ref={transformComponentRef}
@@ -78,14 +76,9 @@ const SaudiMap = ({ }) => {
             )
             }
           </TransformWrapper >
-
-
-
         </div >
       </Container>
-
     </>
-
 
   )
 }

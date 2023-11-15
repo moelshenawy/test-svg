@@ -36,6 +36,7 @@ const Slider = ({ landElments }) => {
       items: 4,
     }
   };
+
   const { contextValue,
     setLandElemnts,
     activeIndex,
@@ -48,10 +49,6 @@ const Slider = ({ landElments }) => {
     cityNames,
     setCityNames,
     handleZoomToLand, } = useMapContext();
-
-
-
-
 
   return (
     <>
