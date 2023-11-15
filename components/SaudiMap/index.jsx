@@ -22,8 +22,6 @@ const SaudiMap = ({ }) => {
         <TransformWrapper
           ref={transformComponentRef}
           wheel={{ wheelDisabled: true }}
-          initialPositionX={0}
-          initialPositionY={0}
           pan={{ disabled: false }}
           zoomIn={{ step: 100 }}
           zoomOut={{ step: 100 }}
@@ -55,20 +53,15 @@ const SaudiMap = ({ }) => {
                   });
 
                 }}>Reset</button>
-
-
-
-
-
               </div>
 
               <TransformComponent>
+                <Svg />
               </TransformComponent>
             </>
           )
           }
         </TransformWrapper >
-        <Svg />
       </Container>
     </>
 
