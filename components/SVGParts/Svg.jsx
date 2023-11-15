@@ -25,11 +25,8 @@ const Svg = () => {
         setViewBox("0 0 858 724");
       }
     };
-
     handleResize();
-
     window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };
