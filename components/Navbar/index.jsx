@@ -23,8 +23,6 @@ const Navbar = () => {
                 </div>
               </div>
               {landElments?.length > 0 && <Slider landElments={landElments} />}
-
-
             </div>
           </Container>
         </Toolbar>
