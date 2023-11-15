@@ -31,7 +31,6 @@ const SaudiMap = ({ }) => {
           initialScale={1}
 
           doubleClick={{ disabled: false, mode: "reset" }}
-          wrapperStyle={{ maxWidth: "100%", maxHeight: "calc(100vh - 50px)" }}
 
         >
 
