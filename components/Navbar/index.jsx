@@ -25,7 +25,7 @@ const Effra = localFont({
       style: 'normal',
     },
     {
-      path: '../../fonts/Effra-Bold.ttf',
+      path: '../../fonts/Effra_cleaBold.ttf',
       weight: '700',
       style: 'normal',
     },
