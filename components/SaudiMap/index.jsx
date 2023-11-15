@@ -62,6 +62,7 @@ const SaudiMap = ({ }) => {
           )
           }
         </TransformWrapper >
+        <Svg />
       </Container>
     </>
 
