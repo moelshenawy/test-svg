@@ -16,9 +16,6 @@ const SaudiMap = ({ }) => {
   } = useMapContext();
 
 
-
-
-
   return (
     <>
 
