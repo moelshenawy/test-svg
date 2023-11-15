@@ -23,6 +23,8 @@ const SaudiMap = ({ }) => {
     <>
 
       <Container>
+        <Svg />
+
         <div className={styles.map_boxes} id='map-boxes'>
           <TransformWrapper
             ref={transformComponentRef}
@@ -70,7 +72,6 @@ const SaudiMap = ({ }) => {
                 <Slider resetTransform={resetTransform} />
               )} */}
                 <TransformComponent>
-                  <Svg />
                 </TransformComponent>
               </>
             )
