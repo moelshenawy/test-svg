@@ -5,32 +5,6 @@ import imgs from '../../assets/constants/imgs';
 import Slider from '../Map/Slider';
 import styles from './index.module.scss'
 import { useMapContext } from '@/context/MapContext';
-import localFont from 'next/font/local'
-
-const Effra = localFont({
-  src: [
-    {
-      path: '../../fonts/Effra_Md.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../../fonts/Effra_Heavy.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../../fonts/Effra_Rg.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../fonts/Effra_cleaBold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-})
 
 
 const Navbar = () => {
@@ -38,7 +12,7 @@ const Navbar = () => {
   const { landElments } = useMapContext();
   return (
     <>
-      <AppBar style={{ ...{ background: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(2px)', boxShadow: 'none' }, borderRadius: '0px 0px 24px 24px', ...Effra.style }}>
+      <AppBar style={{ ...{ background: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(2px)', boxShadow: 'none' }, borderRadius: '0px 0px 24px 24px', }}>
         <Toolbar>
           <Container>
             <div className={styles.nav_container}>
