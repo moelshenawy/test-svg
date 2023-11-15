@@ -20,7 +20,6 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.5",
     "@next/font": "^14.0.1",
     "autoprefixer": "^10.4.16",
-    "framer-motion": "^10.16.4",
     "next": "14.0.1",
     "next-transpile-modules": "^10.0.1",
     "node-sass": "^9.0.0",
