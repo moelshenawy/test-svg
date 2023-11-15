@@ -39,20 +39,10 @@ const Svg = () => {
   }, []);
   return (
     <>
-      <svg
-        width="393"
-        height="482"
-        viewBox="0 0 393 482"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <xml version="1.0" encoding="UTF-8" standalone="no" />
+      <svg id="svg1" width="858" height="724" fill="none" xmlns="http://www.w3.org/2000/svg" class="saudi-map" viewBox="90 90 758 624" >
         <GElements />
-
       </svg>
-
-
-
-
     </>
   )
 }
