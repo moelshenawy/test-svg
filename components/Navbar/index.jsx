@@ -10,6 +10,8 @@ import { useMapContext } from '@/context/MapContext';
 const Navbar = () => {
   const { search } = imgs;
   const { landElments } = useMapContext();
+
+
   return (
     <>
       <AppBar style={{ ...{ background: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(2px)', boxShadow: 'none' }, borderRadius: '0px 0px 24px 24px', }}>
