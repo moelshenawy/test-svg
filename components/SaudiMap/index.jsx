@@ -20,61 +20,57 @@ const SaudiMap = ({ }) => {
     <>
 
       <Container>
-        <Svg />
 
-        <div className={styles.map_boxes} id='map-boxes'>
-          <TransformWrapper
-            ref={transformComponentRef}
-            wheel={{ wheelDisabled: true }}
-            initialPositionX={0}
-            initialPositionY={0}
-            pan={{ disabled: false }}
-            zoomIn={{ step: 100 }}
-            zoomOut={{ step: 100 }}
+        <TransformWrapper
+          ref={transformComponentRef}
+          wheel={{ wheelDisabled: true }}
+          initialPositionX={0}
+          initialPositionY={0}
+          pan={{ disabled: false }}
+          zoomIn={{ step: 100 }}
+          zoomOut={{ step: 100 }}
 
-            minScale={0.5}
-            maxScale={2}
-            initialScale={1}
+          minScale={0.5}
+          maxScale={2}
+          initialScale={1}
 
-            doubleClick={{ disabled: false, mode: "reset" }}
-            wrapperStyle={{ maxWidth: "100%", maxHeight: "calc(100vh - 50px)" }}
+          doubleClick={{ disabled: false, mode: "reset" }}
+          wrapperStyle={{ maxWidth: "100%", maxHeight: "calc(100vh - 50px)" }}
 
-          >
+        >
 
 
-            {({ zoomIn, zoomOut, resetTransform }) => (
+          {({ zoomIn, zoomOut, resetTransform }) => (
 
-              <>
-                <div className={"tools"}>
-                  <button onClick={() => zoomIn()}>+</button>
-                  <button onClick={() => zoomOut()}>-</button>
-                  <button onClick={() => {
-                    resetTransform();
-                    setActiveIndex(null);
-                    setActiveLand(null);
-                    seIsPointsActive(false);
+            <>
+              <div className={"tools"}>
+                <button onClick={() => zoomIn()}>+</button>
+                <button onClick={() => zoomOut()}>-</button>
+                <button onClick={() => {
+                  resetTransform();
+                  setActiveIndex(null);
+                  setActiveLand(null);
+                  seIsPointsActive(false);
 
-                    landElments.forEach((element) => {
-                      element.classList.remove('activeLand', 'hiddenPoints');
-                    });
+                  landElments.forEach((element) => {
+                    element.classList.remove('activeLand', 'hiddenPoints');
+                  });
 
-                  }}>Reset</button>
+                }}>Reset</button>
 
 
 
 
 
-                </div>
-                {/* {landElments?.length > 0 && (
-                <Slider resetTransform={resetTransform} />
-              )} */}
-                <TransformComponent>
-                </TransformComponent>
-              </>
-            )
-            }
-          </TransformWrapper >
-        </div >
+              </div>
+
+              <TransformComponent>
+                <Svg />
+              </TransformComponent>
+            </>
+          )
+          }
+        </TransformWrapper >
       </Container>
     </>
 
