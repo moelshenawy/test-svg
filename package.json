@@ -9,12 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@capacitor/android": "^5.5.1",
-    "@capacitor/cli": "^5.5.1",
-    "@capacitor/core": "^5.5.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@ionic/react": "^7.5.4",
     "@mui/base": "^5.0.0-beta.23",
     "@mui/material": "^5.14.17",
     "@mui/styled-engine-sc": "^6.0.0-alpha.5",
@@ -32,8 +28,5 @@
     "react-zoom-pan-pinch": "^3.3.0",
     "sass": "^1.69.5",
     "styled-components": "^6.1.1"
-  },
-  "devDependencies": {
-    "@capacitor/cli": "^5.5.1"
   }
 }
